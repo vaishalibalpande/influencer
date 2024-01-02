@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { LandingPageRoutingModule } from './landing-routing.module';
 
 import { LandingPage } from './landing.page';
+import { SlidesComponent } from './slides/slides.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { LandingPage } from './landing.page';
     IonicModule,
     LandingPageRoutingModule
   ],
-  declarations: [LandingPage]
+  declarations: [LandingPage,SlidesComponent]
 })
 export class LandingPageModule {}

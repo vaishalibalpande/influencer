@@ -14,6 +14,6 @@ export class SignUpPage implements OnInit {
   }
 
   goToOtp(){
-    this.router.navigate(['/otp']); 
+    this.router.navigate(['/auth/otp']); 
    }
 }

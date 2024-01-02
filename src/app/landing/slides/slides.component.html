@@ -1,3 +1,36 @@
-<p>
-  slides works!
-</p>
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container font-data">
+    <h5 class="heading text-center">Welcome to Influencer</h5>
+
+  <div class="text-center">
+    <img src="../../../assets/influencer-img/slide1.svg" alt="icon">
+  </div>
+  <br>
+
+  <div class="text-center">
+    <span class="stepLabel">Step 1</span><br>
+    <h6>
+      <img src="../../../assets/influencer-img/navigate_before_grey.svg" alt="icon"> Get Yourself Registered
+      <img src="../../../assets/influencer-img/navigate_next_black.svg" alt="icon">
+    </h6>
+  </div>
+
+  <div class="mt-10 text-center">
+    <button type="button" class="btn btn-blue white" (click)="getStarted()">get started!</button>
+  </div>
+
+  <div class="text-center logo">
+    Powered by <br>
+    Fundflo Technologies
+  </div>
+  </div>
+</ion-content>

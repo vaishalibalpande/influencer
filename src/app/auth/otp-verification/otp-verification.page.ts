@@ -14,6 +14,6 @@ export class OtpVerificationPage implements OnInit {
   }
 
   goToConfirm(){
-    this.router.navigate(['/confirm']); 
+    this.router.navigate(['/auth/confirm']); 
   }
 }

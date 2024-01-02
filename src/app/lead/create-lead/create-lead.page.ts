@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader, LoaderOptions } from 'google-maps';
 import { ModalController } from '@ionic/angular';
-import {LocateLeadComponent} from '../../landing/locate-lead/locate-lead.component'
+import { LocateLeadComponent } from '../locate-lead/locate-lead.component';
 
 @Component({
   selector: 'fundflo-create-lead',
@@ -21,12 +21,12 @@ export class CreateLeadPage implements OnInit {
       center: { lat: -34.397, lng: 150.644 },
       zoom: 8,
     });
-    setTimeout(()=>{
-      mapdiv.style ='none'
-    },1000)
+    setTimeout(() => {
+      mapdiv.style = 'none'
+    }, 1000)
     this.locateLead();
-    console.log(map,map);
-    
+    console.log(map, map);
+
   }
 
   async locateLead() {
@@ -42,7 +42,7 @@ export class CreateLeadPage implements OnInit {
     modal.onDidDismiss()
       .then((response: any) => {
         console.log(response);
-     
+
       });
     return await modal.present();
   }

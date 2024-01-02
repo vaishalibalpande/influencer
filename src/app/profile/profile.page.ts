@@ -14,6 +14,6 @@ export class ProfilePage implements OnInit {
   }
 
   goToThanksConfirm(){
-  this.router.navigate(['/thanks-confirm']); 
+  this.router.navigate(['/auth/thanks-confirm']); 
   }
 }

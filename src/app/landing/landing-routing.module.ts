@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LandingPage } from './landing.page';
+import { SlidesComponent } from './slides/slides.component';
 
 const routes: Routes = [
   {
@@ -9,13 +10,9 @@ const routes: Routes = [
     component: LandingPage
   },
   {
-    path: 'overview',
-    loadChildren: () => import('./overview/overview.module').then( m => m.OverviewPageModule)
+    path: 'slides',
+    component: SlidesComponent
   },
-  {
-    path: 'create-lead',
-    loadChildren: () => import('./create-lead/create-lead.module').then( m => m.CreateLeadPageModule)
-  }
 ];
 
 @NgModule({

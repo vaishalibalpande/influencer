@@ -14,7 +14,7 @@ export class ThanksConfirmPage implements OnInit {
   }
 
   goToCongrats(){
-    this.router.navigate(['/congrats-confirm']); 
+    this.router.navigate(['/auth/congrats-confirm']); 
   }
  
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'fundflo-slides',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidesComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
 
+  getStarted(){
+    this.router.navigate(['/auth/sign-up']);
+  }
 }

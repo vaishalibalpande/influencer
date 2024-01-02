@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: OverviewPage
-  }
+  },
+  {
+    path: 'overview',
+    loadChildren: () => import('./overview.module').then( m => m.OverviewPageModule)
+  },
 ];
 
 @NgModule({

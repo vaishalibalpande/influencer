@@ -37,6 +37,10 @@
     margin-bottom: 10%;
 }
 
+.mt-10 {
+    margin-top: 10%;
+}
+
 .mt-20 {
     margin-top: 20%;
 }
@@ -63,4 +67,8 @@
     bottom: calc(var(--offset-bottom) * -1);
     position: absolute;
     background: #EDF9FF !important;
+}
+
+.font-data {
+    font-family: 'Nunito Sans', sans-serif;
 }

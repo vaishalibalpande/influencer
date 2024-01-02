@@ -18,7 +18,7 @@ export class CongratsConfirmPage implements OnInit {
   }
 
   goToCreateLead() {
-    this.router.navigate(['/create-lead']);
+    this.router.navigate(['/lead/create-lead']);
   }
 
 }
