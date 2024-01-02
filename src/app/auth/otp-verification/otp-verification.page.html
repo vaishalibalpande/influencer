@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title>otp-verification</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">otp-verification</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div class="container">
+    <h5 class="heading">Enter OTP</h5>
+    <h2 class="subheading"> sent to 99820 88920</h2>
+
+    <div class="otpdiv">
+      <div class="form-group">
+        <input class="text-center form-control rounded" #text1 id="tel_1"  maxlength="1"
+          type="text" />
+      </div>
+
+      <div class="form-group">
+        <input class="text-center form-control rounded" #text2 id="tel_2" maxlength="1"
+          type="text" />
+      </div>
+
+      <div class="form-group">
+        <input class="text-center form-control rounded" #text3 id="tel_3" maxlength="1"
+          type="text" />
+      </div>
+
+      <div class="form-group">
+        <input class="text-center form-control rounded" #text4 id="tel_4" maxlength="1"
+          type="text" />
+      </div>
+    </div>
+
+    <div class="text-center">
+      <span class="resendOtpLabel"><a class="resend">Resend</a> in 30 seconds</span>
+    </div>
+
+    <div class="mt-20">
+      <button type="button" class="btn btn-blue" (click)="goToConfirm()">Submit</button>
+    </div>
+  </div>
+</ion-content>

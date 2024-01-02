@@ -1,0 +1,55 @@
+h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: #98197F;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000000;
+    padding: 10px 69px;
+}
+
+.container {
+    background: linear-gradient(180deg, rgba(121, 198, 236, 0.06) 0%, rgba(54, 170, 227, 0.2) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    box-shadow: 0px 8px 16px 0px #0000003D;
+    height: -webkit-fill-available;
+}
+
+.confirmImg {
+    margin-top: 45px;
+}
+
+.btn {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1.25px;
+    width: 80%;
+    height: 40px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin: 0 36px;
+}
+
+.white {
+color: #FFFFFF;
+}
+
+.blue {
+color: #1981B4;
+border: 1px solid #2D3748
+}
+
+.btn-blue {
+background: #1981B4;
+}
