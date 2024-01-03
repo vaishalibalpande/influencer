@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LeadPage } from './lead.page';
 import { LocateLeadComponent } from './locate-lead/locate-lead.component';
+import { LeadDetailsComponent } from './lead-details/lead-details.component';
+import { LeadSummaryComponent } from './lead-summary/lead-summary.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'locate-lead',
     component: LocateLeadComponent
+  },
+  {
+    path: 'locate-lead',
+    component: LeadDetailsComponent
+  },
+  {
+    path: 'lead-summary',
+    component: LeadSummaryComponent
   }
 ];
 

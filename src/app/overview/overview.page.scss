@@ -1,17 +1,18 @@
 .container {
     box-shadow: 0px 8px 16px 0px #0000003D;
     height: -webkit-fill-available;
-    background: #EDF9FF
+    background: #EDF9FF;
+    padding: 4%;
 }
 
-h6 {
+.labelOverview {
+    font-size: 22px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.15000000596046448px;
     text-align: center;
     color: #2D3748;
 }
-
 
 .btn {
     font-size: 15px;

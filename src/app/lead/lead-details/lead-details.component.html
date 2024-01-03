@@ -1,0 +1,56 @@
+<ion-content class="ion-padding main">
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Add More Information<span class="f-right">
+            <img src="../../../assets/influencer-img/close.svg" alt="icon"></span>
+        </h2>
+      </ion-label>
+    </ion-item>
+    <div class="container height-100">
+      <div class="form-group">
+        <input type="text" class="form-control" id="entcode" required>
+        <label class="label" for="usr">Lead Name</label>
+      </div>
+
+      <div class="form-group">
+        <select class="form-control">
+          <option hidden></option>
+          <option>12345</option>
+          <option> 123456</option>
+        </select>
+        <label class="label" for="usr">Lead type</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="entcode" required>
+        <label class="label" for="usr">Contact Person</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="entcode" required>
+        <label class="label" for="usr">Contact Phone number</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="entcode" required>
+        <label class="label" for="usr"> Tonnage Required</label>
+      </div>
+
+      <div class="d-flex">
+        <div class="mb-3">
+          <button type="button" class="btn blue">
+            <img class="m-t-2" src="../../../assets/influencer-img/back.svg" alt="icon">&nbsp;
+            Back </button>
+        </div> &nbsp;&nbsp;
+        <div class="mb-3">
+          <button type="button" class="btn blue">Save & Exit</button>
+        </div> &nbsp;&nbsp;
+        <div class="mb-3">
+          <button type="button" class="btn blue" (click)="addPhotos()"> Next
+            <img src="../../../assets/influencer-img/navigate_next.svg" alt="icon"> </button>
+        </div>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

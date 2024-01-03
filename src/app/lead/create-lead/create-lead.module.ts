@@ -7,15 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { CreateLeadPageRoutingModule } from './create-lead-routing.module';
 
 import { CreateLeadPage } from './create-lead.page';
-import { LocateLeadComponent } from '../locate-lead/locate-lead.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CreateLeadPageRoutingModule
+    GoogleMapsModule,
+    CreateLeadPageRoutingModule,
+
   ],
-  declarations: [CreateLeadPage,LocateLeadComponent]
+  declarations: [CreateLeadPage]
 })
 export class CreateLeadPageModule {}
