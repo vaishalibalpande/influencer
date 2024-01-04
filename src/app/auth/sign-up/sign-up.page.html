@@ -22,25 +22,49 @@
     </div>
 
     <div class="row">
+
       <div class="col-md-6">
-        <br>
-        <div class="form-group">
-          <input type="text" class="form-control" id="usr" required>
-          <label class="label" for="usr">Name</label>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="mob" required>
-          <label class="label" for="usr">Mobile Number</label>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="entcode" required>
-          <label class="label" for="usr">Enterprise Code</label>
-        </div>
+        <form [formGroup]="signupform">
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="userName">
+            <label class="label" for="usr">Name</label>
+            @if (submitted && signupform.controls['userName'].hasError('required'))
+            {
+            <div> User name is required</div>
+            }
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-control" formControlName="userMobile">
+            <label class="label" for="usr">Mobile Number</label>
+            @if(submitted && signupform.controls['userMobile'].hasError('pattern') &&
+            !signupform.controls['userMobile'].hasError('required')){
+            <div>Please enter a valid mobile number</div>
+            }
+
+            @if (submitted && signupform.controls['userMobile'].hasError('required')) {
+            <div>
+              Mobile number is required
+            </div>
+            }
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="enterpriseCode">
+            <label class="label" for="usr">Enterprise Code</label>
+            @if (submitted && signupform.controls['enterpriseCode'].hasError('required')) {
+            <div>Enterprise code is required</div>
+            }
+          </div>
+        </form>
       </div>
     </div>
 
     <div class="mb-10">
-      <button type="button" class="btn btn-blue" (click)="goToOtp()">Sign up with OTP</button>
+      <button type="button" class="btn btn-blue" [ngClass]="{'signupStart':signupform.valid}" [disabled]=" "
+        (click)="onSignup()">
+        Sign up with OTP</button>
     </div>
   </div>
 </ion-content>

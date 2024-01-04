@@ -1,27 +1,23 @@
 <ion-content class="ion-padding main">
-  <ion-list>
-    <ion-item>
-      <ion-label>
-        <h2>Locate your lead in the map <span class="f-right" (click)="onClose()">
-            <img src="../../../assets/influencer-img/close.svg" alt="icon"></span>
-        </h2>
-        <p>Or enter the lead location below</p>
-      </ion-label>
-    </ion-item>
-    <div class="form-group">
-      <input placeholder="Location" ngx-google-places-autocomplete #places="ngx-places" type="text" class="form-control"
-      id="entcode" (onAddressChange)="address($event)" />
-      <label class="label" for="usr">Location</label>
-    </div>
+  <h2 class="heading">Locate your lead in the map <span class="f-right" (click)="onClose()">
+      <img src="../../../assets/influencer-img/close.svg" alt="icon"></span>
+  </h2>
+  <p>Or enter the lead location below</p>
+  <div class="form-group">
+    <img class="location-img" src="../../../assets/influencer-img/location.svg" alt="icon">  
+    <input placeholder="Location" ngx-google-places-autocomplete #places="ngx-places" type="text" class="form-control"
+      id="entcode" (onAddressChange)="address($event)" />  
+      <img class="f-right trailing-img" src="../../../assets/influencer-img/trailing.svg" alt="icon">
+    <label class="label" for="usr">Location</label>
+  </div>
 
-    <div class="f-right d-flex">
-      <div class="mb-3">
-        <button type="button" class="btn blue">Save & Exit</button>
-      </div> &nbsp;
-      <div class="mb-3">
-        <button type="button" class="btn blue" (click)="leadDetails()"> Next 
-          <img src="../../../assets/influencer-img/navigate_next.svg" alt="icon"> </button>
-      </div>
+  <div class="f-right d-flex">
+    <div class="mb-3">
+      <button type="button" class="btn blue">Save & Exit</button>
+    </div> &nbsp;
+    <div class="mb-3">
+      <button type="button" class="btn blue" (click)="leadDetails()"> Next
+        <img src="../../../assets/influencer-img/navigate_next.svg" alt="icon"> </button>
     </div>
-  </ion-list>
+  </div>
 </ion-content>

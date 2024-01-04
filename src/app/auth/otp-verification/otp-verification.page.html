@@ -1,7 +1,4 @@
 <ion-header [translucent]="true">
-  <!-- <ion-toolbar>
-    <ion-title></ion-title>
-  </ion-toolbar> -->
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -14,35 +11,37 @@
   <div class="container font-data">
     <h5 class="heading">Enter OTP</h5>
     <h2 class="subheading"> sent to 99820 88920</h2>
+    <form [formGroup]="otpForm" [autocomplete]="'off'">
+      <div class="otpdiv">
+        <div class="form-group">
+          <input class="text-center form-control rounded" #text1 id="tel_1" maxlength="1" formControlName="first"
+            (keyup)="onInput($event,1);move(text1, text2)" type="text" />
+        </div>
 
-    <div class="otpdiv">
-      <div class="form-group">
-        <input class="text-center form-control rounded" #text1 id="tel_1"  maxlength="1"
-          type="text" />
+        <div class="form-group">
+          <input class="text-center form-control rounded" #text2 id="tel_2" maxlength="1" formControlName="second"
+            (keyup)="onInput($event,2);move(text2, text3)" type="text" />
+        </div>
+
+        <div class="form-group">
+          <input class="text-center form-control rounded" #text3 id="tel_3" formControlName="third"
+            (keyup)="onInput($event,3);move(text3, text4)" maxlength="1" type="text" />
+        </div>
+
+        <div class="form-group">
+          <input class="text-center form-control rounded" #text4 id="tel_4" formControlName="fourth" maxlength="1"
+            (keyup)="onInput($event,4)" type="text" />
+        </div>
       </div>
-
-      <div class="form-group">
-        <input class="text-center form-control rounded" #text2 id="tel_2" maxlength="1"
-          type="text" />
-      </div>
-
-      <div class="form-group">
-        <input class="text-center form-control rounded" #text3 id="tel_3" maxlength="1"
-          type="text" />
-      </div>
-
-      <div class="form-group">
-        <input class="text-center form-control rounded" #text4 id="tel_4" maxlength="1"
-          type="text" />
-      </div>
-    </div>
-
+    </form>
     <div class="text-center">
-      <span class="resendOtpLabel"><a class="resend">Resend</a> in 30 seconds</span>
+      <span class="resendOtpLabel"><a class="resend">Resend</a>&nbsp; <span class="color-purple">in 30
+          seconds</span></span>
     </div>
 
     <div class="mt-20">
-      <button type="button" class="btn btn-blue" (click)="goToConfirm()">Submit</button>
+      <button type="button" class="btn btn-blue" [ngClass]="{'colorBlue':otpForm.valid}"
+        (click)="goToConfirm()">Submit</button>
     </div>
   </div>
 </ion-content>

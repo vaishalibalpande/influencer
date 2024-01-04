@@ -33,7 +33,7 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus,input[type="tel"]:focus{
   box-shadow: 0 0 2px 0 dodgerBlue;
 }
 
@@ -66,11 +66,11 @@ input[type="text"]:focus{
     border-radius: 100px;
     text-transform: uppercase;
     margin: 0 2px;
+    background: #1D1B201F;
 }
-
-.btn-blue {
-    background: #1981B4;
-}
+// .btn-blue {
+//     background: #1981B4;
+// }
 
 .label {
     font-size: 17px;
@@ -79,4 +79,35 @@ input[type="text"]:focus{
     letter-spacing: 0.5px;
     text-align: left;
 
+}
+.form-group div {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #FF0000;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -6%;
+    margin-bottom: 8%;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+input.ng-valid.ng-touched {
+    border: 1px solid #2D3748;
+}
+
+.error {
+    border: 1px solid #FF0000;
+}
+
+
+button:focus {
+    box-shadow: 0 0 2px 0 dodgerBlue;
+}
+
+.signupStart {
+    background: #1981B4;
+    color: white;
 }

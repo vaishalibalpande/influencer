@@ -63,6 +63,11 @@ input[type=text]:focus {
     width: 100%;
 }
 
+.colorBlue {
+    background: #1984B1 !important;
+    color: white !important;
+  } 
+
 .resendOtpLabel {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 13px;
@@ -90,11 +95,12 @@ input[type=text]:focus {
     border-radius: 100px;
     text-transform: uppercase;
     margin: 0 2px;
+    background: #1D1B201F;
 }
 
-.btn-blue {
-    background: #1981B4;
-}
+// .btn-blue {
+//     background: #1981B4;
+// }
 
 .otpdiv {
     display: flex;
